@@ -3,7 +3,7 @@
     width: 100%;
     background-color: #d6d7da;
     font-family: 'Poppins', sans-serif;
-    height: 130vh;
+    height: 160vh;
     padding-top: 50px;
 }
 .weather{
@@ -35,7 +35,13 @@
 }
 .search button{
     border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+   
+    overflow: hidden;
 }
+
 button img{
     border: none;
     outline: none;
@@ -134,6 +140,13 @@ button img{
 .nav p:nth-child(1){
     text-align: start;
     padding-left: 10px;
+    font-size: 1rem;
+    color: rgb(0 0 0/26%);
+}
+.nav p:nth-child(2){
+    color: #6c757d;
+    font-weight: 700;
+    font-size: 1rem;
 }
 .nav a{
     text-decoration: none;
@@ -151,8 +164,36 @@ button img{
     flex-wrap: wrap;
 }
 .gr-content-week{
+    position: relative;
     color: black;
     text-align: start;
     padding: 10px 100px 10px 30px;
     line-height: 2.3rem;
+}
+.icon-close{
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+}
+.details h3{
+    font-weight: 700;
+    font-size: calc(1.3rem + .6vw)
+}
+.details p{
+    font-size: 1.25rem!important;
+}
+.details .col:nth-child(1) .col-items:nth-child(2){
+    position: relative;
+}
+.details .col #span{
+    position: absolute;
+    left: 119px;
+    top: 49px;
+    font-size: 18px;
+}
+.details .col:nth-child(3) .col-items:nth-child(1) h3{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }

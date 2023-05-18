@@ -1,5 +1,6 @@
+import { Icon } from '@iconify/react';
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import './style.css'
 function DetailsWeek(props) {
     const { id } = useParams()
@@ -8,6 +9,9 @@ function DetailsWeek(props) {
 
     return (
         <div className='gr-content-week'>
+        <Link to='/week' className='icon-close'>
+        <Icon icon="solar:close-square-bold-duotone" width="40" height="40" />
+        </Link>
             <h3 className='title'>{dataWeek[id].time.replace('T00:00:00Z', '')}</h3>
             <div className='content-child'>
                 <div className='child'>

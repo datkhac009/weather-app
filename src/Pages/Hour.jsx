@@ -2,7 +2,7 @@
 function Hour() {
     return (
         <div>
-            <h1>Hour</h1>
+            <h1>Undeveloped</h1>
         </div>
     );
 }
