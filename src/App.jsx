@@ -1,13 +1,17 @@
 
-import './App.css'
-import Mainlayout from './Mainlayout/Mainlayout'
+import './App.scss'
+import Mainlayout from './layout/Mainlayout'
+import Navlinkmenu from './layout/Navlinkmenu'
+import Routes from './routes'
 
 
 function App() {
   return (
-    <>
-      <Mainlayout />
-    </>
+    <Mainlayout body={
+      <Routes
+        header={<Navlinkmenu />} 
+      />} 
+    />
   )
 }
 

@@ -1,7 +1,8 @@
 import { Icon } from '@iconify/react';
-import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import './style.css'
+
+import React from 'react';
+
 function DetailsWeek(props) {
     const { id } = useParams()
     const { dataWeek } = props

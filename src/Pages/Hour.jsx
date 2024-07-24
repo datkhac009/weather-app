@@ -1,5 +1,5 @@
 
-function Hour() {
+function hour() {
     return (
         <div>
             <h1>Undeveloped</h1>
@@ -7,4 +7,4 @@ function Hour() {
     );
 }
 
-export default Hour;
+export default hour;
